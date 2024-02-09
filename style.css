@@ -1,0 +1,58 @@
+*{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+body{
+  background-color: #059F76;
+  border: solid red;
+  height: 662px;
+  border-width: 1px;
+  box-shadow: inset 5px 5px 5px pink, inset -5px -5px 5px pink;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.container{
+  width: 100px;
+  height: 100px;
+  background-color: #00D79D;
+  border: 1px solid #00FFBA;
+  box-shadow: 1px 1px 5px 1px #3EE9FA, -1px -1px 5px 1px #3EE9FA, -1px 1px 5px 1px #3EE9FA, 1px -1px 5px 1px #3EE9FA;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  transform: rotate(45deg);
+  animation-name: myframe;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out
+  
+}
+.box{
+  height: 33%;
+  width: 33%;
+  background-color: #fff;
+  animation-name: myframes;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes myframes{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(90deg)
+  }
+}
+/*@keyframes myframe{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(90deg)
+  }
+}
